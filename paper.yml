@@ -283,39 +283,49 @@ world-settings:
           validatenearbypoi: -1
     feature-seeds:
       generate-random-seeds-for-all: false
-    anti-xray:
-      enabled: false
+anti-xray:
+      enabled: true
       engine-mode: 1
+      chunk-edge-mode: 2
+      max-chunk-section-index: 3
       max-block-height: 64
       update-radius: 2
       lava-obscures: false
       use-permission: false
       hidden-blocks:
+      - chest
+      - coal_ore
+      - deepslate_coal_ore
       - copper_ore
       - deepslate_copper_ore
+      - diamond_ore
+      - deepslate_diamond_ore
+      - emerald_ore
+      - deepslate_emerald_ore
       - gold_ore
       - deepslate_gold_ore
       - iron_ore
       - deepslate_iron_ore
-      - coal_ore
-      - deepslate_coal_ore
       - lapis_ore
       - deepslate_lapis_ore
-      - mossy_cobblestone
-      - obsidian
-      - chest
-      - diamond_ore
-      - deepslate_diamond_ore
       - redstone_ore
       - deepslate_redstone_ore
-      - clay
-      - emerald_ore
-      - deepslate_emerald_ore
-      - ender_chest
       replacement-blocks:
       - stone
       - oak_planks
       - deepslate
+       world_nether:
+    anti-xray:
+      max-chunk-section-index: 7
+      max-block-height: 128
+      hidden-blocks:
+      - ancient_debris
+      - nether_gold_ore
+      - nether_quartz_ore
+  # world_the_end: needs to be changed if your world is named differently.
+  world_the_end:
+    anti-xray:
+      enabled: false
     viewdistances:
       no-tick-view-distance: -1
     unsupported-settings:
