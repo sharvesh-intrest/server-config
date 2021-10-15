@@ -291,7 +291,7 @@ anti-xray:
       max-block-height: 64
       update-radius: 2
       lava-obscures: false
-      use-permission: false
+      use-permission: true
       hidden-blocks:
       - chest
       - coal_ore
